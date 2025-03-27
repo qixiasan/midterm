@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <students>
     <student>
-        <image>juan_dela_cruz.jpg</image>
+        <image>https://www.investopedia.com/thmb/prDl8P2YEo_C511RNP10XZ1haNY=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/CopyofCaleb_Final-CalebSilver-5c09a16346e0fb000182c90c.jpg</image>
         <name>Juan Dela Cruz</name>
         <course>BSIT</course>
         <yearSection>3bg2</yearSection>
@@ -9,20 +9,75 @@
         <schoolYear>2025-2026</schoolYear>
     </student>
     <student>
-        <image>juan_dela_cruz.jpg</image>
-        <name>Juan Dela Cruz</name>
+        <image>https://www.investopedia.com/thmb/r-iX7y6Tjh1969xYSEyVV3ens4k=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Anna_Attkisson_BW_web_ready-6-ac8383e3ab2b433b85da3a8b6d4fa3c6.jpg</image>
+        <name>Maria Santos</name>
+        <course>BSIT</course>
+        <yearSection>3bg2</yearSection>
+        <adviser>Ms. Angela Reyes</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/oEKcOtLBpU21ITH2oG_iYD9BwQ8=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Hilarey-Gould-BW-WebReady-3cfe8520e3ae47b0a3376a4ad73fa422.jpg</image>
+        <name>Carlo Mendoza</name>
+        <course>BSCS</course>
+        <yearSection>3A</yearSection>
+        <adviser>Dr. Roberto Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/earPLfwkWmsvRz2fiDLj6qOoNCU=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ben_woolsey-a17d6ba8454045d9807bf04350bb5978.png</image>
+        <name>Luis Garcia</name>
+        <course>BSIT</course>
+        <yearSection>3bg3</yearSection>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/xJ6Pw2VTm4yNul7XLGzd5IDai78=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Yasmin-Ghahremani-BW-WebReady-01-b39791637712414ba1b30b2633b5c6d6.jpg</image>
+        <name>Ana Rodriguez</name>
+        <course>BSIT</course>
+        <yearSection>3bg1</yearSection>
+        <adviser>Ms. Angela Reyes</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/zDIX6LQnEkyVQpxf8FN00sVWFKA=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/MichaelSacchitelloBio-6744f7bcfdbe4b1cb3027f0812327389.jpeg</image>
+        <name>Daniel Torres</name>
+        <course>BSCS</course>
+        <yearSection>3A</yearSection>
+        <adviser>Dr. Roberto Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/vEoDKjCY4Rw7LU5aorXEE36vcgE=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Stella-Osoba_BW-WebReady-dd802700bcf54516a75b8c740dec302f.jpg</image>
+        <name>Sofia Martinez</name>
         <course>BSIT</course>
         <yearSection>3bg2</yearSection>
         <adviser>Mr. Ramon Dela Cruz</adviser>
         <schoolYear>2025-2026</schoolYear>
     </student>
     <student>
-        <image>juan_dela_cruz.jpg</image>
-        <name>Juan Dela Cruz</name>
+        <image>https://www.investopedia.com/thmb/rV3CWJdOAogvw3COG40vE5KBXhU=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Lars-Peterson_BW-WebReady-2-43cacd4cab5e45729ec26702c70dfd90.jpg</image>
+        <name>Miguel Fernandez</name>
         <course>BSIT</course>
-        <yearSection>3bg2</yearSection>
+        <yearSection>3bg1</yearSection>
+        <adviser>Ms. Angela Reyes</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/9MclvmgLjCUogWKcvKELT3vct-E=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Sienna_Wrenn_BW_web_ready-10-92d38bdf4ee04c48ae86a637ad2fb5b1.jpg</image>
+        <name>Clarisse Gomez</name>
+        <course>BSCS</course>
+        <yearSection>3A</yearSection>
+        <adviser>Dr. Roberto Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>https://www.investopedia.com/thmb/X7VUDL9hF_3rfIS2tG1eUz7s3YQ=/228x250/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/B-Harkness-Headshot-edit-ec63ec9233ff4373a43817750e28afd2.jpg</image>
+        <name>Andrew Santos</name>
+        <course>BSIT</course>
+        <yearSection>3bg3</yearSection>
         <adviser>Mr. Ramon Dela Cruz</adviser>
         <schoolYear>2025-2026</schoolYear>
     </student>
-    <!-- Add at least 10 students here -->
 </students>
