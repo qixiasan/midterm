@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <image>juan_dela_cruz.jpg</image>
+        <name>Juan Dela Cruz</name>
+        <course>BSIT</course>
+        <yearSection>3bg2</yearSection>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>juan_dela_cruz.jpg</image>
+        <name>Juan Dela Cruz</name>
+        <course>BSIT</course>
+        <yearSection>3bg2</yearSection>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <image>juan_dela_cruz.jpg</image>
+        <name>Juan Dela Cruz</name>
+        <course>BSIT</course>
+        <yearSection>3bg2</yearSection>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <!-- Add at least 10 students here -->
+</students>

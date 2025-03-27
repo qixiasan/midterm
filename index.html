@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Colleges - Library Users</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>ABC Colleges</h1>
+    <h2>Library users</h2>
+
+    <div class="container" id="student-list"></div>
+
+    <script>
+        // Load and parse XML data
+        function loadXML() {
+            console.log("Loading XML...");
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                console.log("Ready state:", this.readyState, "Status:", this.status);
+                if (this.readyState === 4) {
+                    if (this.status === 200) {
+                        console.log("XML loaded successfully");
+                        displayStudents(this);
+                    } else {
+                        console.error("Failed to load XML file", this.status, this.statusText);
+                    }
+                }
+            };
+            xhttp.open("GET", "drew_seven.xml", true);
+            xhttp.send();
+        }
+
+        // Display students dynamically
+        function displayStudents(xml) {
+            const xmlDoc = xml.responseXML;
+            if (!xmlDoc) {
+                console.error("Failed to parse XML");
+                return;
+            }
+            const students = xmlDoc.getElementsByTagName("student");
+            if (students.length === 0) {
+                console.warn("No students found in the XML");
+            } else {
+                console.log("Number of students found:", students.length);
+            }
+            const container = document.getElementById("student-list");
+            container.innerHTML = '';
+
+            for (let i = 0; i < students.length; i++) {
+                let img = students[i].getElementsByTagName("image")[0].childNodes[0].nodeValue;
+                let name = students[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+                let course = students[i].getElementsByTagName("course")[0].childNodes[0].nodeValue;
+                let yearSection = students[i].getElementsByTagName("yearSection")[0].childNodes[0].nodeValue;
+                let adviser = students[i].getElementsByTagName("adviser")[0].childNodes[0].nodeValue;
+                let schoolYear = students[i].getElementsByTagName("schoolYear")[0].childNodes[0].nodeValue;
+
+                console.log("Student details:", { img, name, course, yearSection, adviser, schoolYear });
+
+                let card = `
+                    <div class="card">
+                        <img src="${img}" alt="${name}">
+                        <div>
+                            <p><strong>Name:</strong> ${name}</p>
+                            <p><strong>Course:</strong> ${course}</p>
+                            <p><strong>Year Level / Section:</strong> ${yearSection}</p>
+                            <p><strong>Adviser:</strong> ${adviser}</p>
+                            <p><strong>School Year:</strong> ${schoolYear}</p>
+                        </div>
+                    </div>
+                `;
+
+                container.innerHTML += card;
+            }
+        }
+
+        // Load XML when page loads
+        window.onload = loadXML;
+    </script>
+
+</body>
+</html>
