@@ -28,30 +28,29 @@
             const adviser = students[i].getElementsByTagName("Adviser")[0].textContent;
             const schoolYear = students[i].getElementsByTagName("SchoolYear")[0].textContent; // Added this line
 
-            const studentDiv = document.createElement("div");
-            studentDiv.classList.add("student");
-
-            const detailsDiv = document.createElement("div");
-            detailsDiv.classList.add("details");
-            detailsDiv.innerHTML = `
-              <p>Name: ${name}</p>
-              <p>Course: ${course}</p>
-              <p>Year/Section: ${yearLevelSection}</p>
-              <p>Adviser: ${adviser}</p>
-              <p>School Year: ${schoolYear}</p> <!-- Added this line -->
-            `;
-
             const picture = students[i].getElementsByTagName("Picture")[0].textContent;
             const img = document.createElement("img");
             img.src = picture;
             img.alt = `${name}'s picture`;
-            img.style.width = "100px";
-            img.style.height = "100px";
 
-            studentDiv.appendChild(detailsDiv);
-            studentDiv.appendChild(img);
+            const studentDiv = document.createElement("div");
+            studentDiv.classList.add("student");
+            
+            const detailsDiv = document.createElement("div");
+            detailsDiv.classList.add("details");
+            detailsDiv.innerHTML = `
+              <p><strong>Name:</strong> ${name}</p>
+              <p><strong>Course:</strong> ${course}</p>
+              <p><strong>Year/Section:</strong> ${yearLevelSection}</p>
+              <p><strong>Adviser:</strong> ${adviser}</p>
+              <p><strong>School Year:</strong> ${schoolYear}</p>
+            `;
+            
+            studentDiv.appendChild(img);  // Image first
+            studentDiv.appendChild(detailsDiv); // Then details
+            
             container.appendChild(studentDiv);
-          }
+                      }
         }
       };
       xhr.send();
