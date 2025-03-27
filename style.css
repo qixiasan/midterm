@@ -1,65 +1,45 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /*Font Style: Arial*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 20px;
-  background-color: white;
 }
 
 h1 {
   font-size: 50px;
-  margin: 20px 0 5px;
-  text-align: center;
+  margin-top: 40px;
+  margin-bottom: -10px;
 }
 
 h3 {
-  font-size: 22px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns like your layout */
-  gap: 15px;
-  width: 85%;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 80%;
 }
 
 .student {
+  border: 3px solid #ccc; /*Border: 3px*/
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
-  border: 3px solid #000;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 280px; /* Control width */
-}
-
-.student img {
-  width: 60px;
-  height: 60px;
-  border-radius: 3px;
-  margin-right: 10px;
 }
 
 .details {
-  font-size: 12px;
-  text-align: left;
+  font-size: 12px; /*Font Size: 12*/
+  text-align: start;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-    width: 90%;
-  }
-}
+/*Responsive*/
 
 @media (max-width: 768px) {
   .container {
@@ -73,9 +53,13 @@ h3 {
     grid-template-columns: 1fr;
     width: 95%;
   }
-
+  
   .student {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details {
+    text-align: center;
   }
 }
